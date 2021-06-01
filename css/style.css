@@ -1,3 +1,8 @@
+.gex {
+    display: inline-block;
+    text-align: center;
+}
+
 .title {
     display: inline-block;
     margin: 20% 0 15%;
@@ -9,22 +14,23 @@
 
 .description {
     display: inline-block;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-bottom: 20px;
-    margin: 10% 0 10%;
-    width: 80%;
+    margin: 8% 0 6%;
+    width: 75%;
     border: solid 2px black;
     border-radius: 1rem;
+    font-size: 0.9rem;
 }
 
 .description p {
-    font-size: 1.5rem;
-    line-height: 0.4rem;
+    font-size: 1.2rem;
+    line-height: 0.3rem;
 }
 
 .overview {
     display: inline-block;
-    width: 80%;
+    width: 75%;
     padding-top: 10px;
     /* background-color: rgb(208, 180, 235); */
     border: solid 2px black;
@@ -35,12 +41,12 @@
     text-align: left;
     margin: 0% 12% 10%;
     font-size: 0.75em;
-    line-height: 1rem;
+    line-height: 1.1rem;
 }
 
 .start {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .start-btn {
@@ -48,9 +54,9 @@
     display: inline-block;
     text-decoration: none;
     line-height: 3rem;
-    background: #f17d7d;
-    /* border-radius: 15%; */
-    /* color: rgb(179, 12, 12); */
+    background: #000000;
+    border-radius: 2rem;
+    color: rgb(255, 255, 255);
     /* box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6) inset; */
     width: 100px;
     /* height: 50px; */
@@ -59,7 +65,10 @@
 }
 
 
-.gex {
-    display: inline-block;
+/* color、formのスタイル */
+
+.question {
+    margin-top: 30%;
     text-align: center;
+    font-size: 2em;
 }
