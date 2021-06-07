@@ -1,0 +1,26 @@
+.question {
+    margin-top: 25%;
+    text-align: center;
+    font-size: 2em;
+    line-height: 3rem;
+}
+
+.form {
+    display: inline-block;
+    text-align: center;
+    margin: 15% 15% 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.id {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.id img {
+    margin: 10px;
+    height: 80px;
+}
