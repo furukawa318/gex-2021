@@ -1,5 +1,4 @@
 const pane = new Tweakpane.Pane();
-const pane = new Pane();
 
 const PARAMS = {
     factor: 123,
