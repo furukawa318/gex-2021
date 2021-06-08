@@ -13,10 +13,21 @@
 }
 
 .sns {
-    margin: 20% 0 10%;
+    margin: 20% 0 0;
 }
 
 .twitter img {
-    margin: 20px 5px;
+    margin: 20px 0px;
     height: 30px;
+}
+
+.back {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 0 10px;
+    line-height: 3rem;
+    background: #000000;
+    border-radius: 2rem;
+    color: rgb(255, 255, 255);
 }
