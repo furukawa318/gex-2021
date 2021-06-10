@@ -10,3 +10,4 @@ const PARAMS = {
   pane.addInput(PARAMS, 'title');
   pane.addInput(PARAMS, 'color');
 
+console.log(pane.addInput);
