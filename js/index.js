@@ -5,22 +5,32 @@ const EMOTIONAL_LIST = [
     'おこる',
     '好き',
 ];
+
+const SHAPE_NAME_LIST = [
+    "circle",
+    "triangle",
+    "star",
+    "cross",
+    "rectangle",
+    "hexagon",
+];
+
 const EMOTIONAL_ID = Math.floor(Math.random() * EMOTIONAL_LIST.length);
 const EMOTIONAL_LABEL = EMOTIONAL_LIST[EMOTIONAL_ID];
 
 const initilize = function() {
-    const questionLabel = document.querySelector('#js-question-label');
+    // const questionLabel = document.querySelector('#js-question-label');
     const buttonList = document.querySelectorAll('.js-button');
 
-    questionLabel.textContent = EMOTIONAL_LABEL;
+    // questionLabel.textContent = EMOTIONAL_LABEL;
     
     buttonList.forEach(function(button, i) {
         button.addEventListener('click', function (e) {
             gtag("event", "select_content", {
                 // 感情名をcontent_typeとする
-                content_type: `select_shape_emotion_${EMOTIONAL_LABEL}`,
+                content_type: `かたち_${EMOTIONAL_LABEL}`,
                 // ボタンのインデックス（何番目のボタンか）の数値を選択したIDとする
-                item_id: i,
+                item_id: `${SHAPE_NAME_LIST[i]}`,
             });
         });
     });
