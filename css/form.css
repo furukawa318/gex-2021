@@ -9,6 +9,11 @@
     line-height: 3rem;
 }
 
+.question p{
+    margin: auto;
+    font-size: 1.5rem;
+}
+
 .form {
     display: inline-block;
     text-align: center;

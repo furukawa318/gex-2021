@@ -6,15 +6,6 @@
 
 .title {
     display: inline-block;
-    margin: 20% 0 15%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    width: 80%;
-    background-color: aquamarine;
-}
-
-.description {
-    display: inline-block;
     padding-top: 15px;
     padding-bottom: 15px;
     margin: 8% 0 6%;
@@ -24,9 +15,14 @@
     font-size: 0.9rem;
 }
 
-.description p {
+.title p {
     font-size: 1.2rem;
     line-height: 0.3rem;
+}
+
+.description {
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
 }
 
 .overview {

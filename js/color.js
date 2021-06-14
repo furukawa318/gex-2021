@@ -6,13 +6,15 @@ const EMOTIONAL_LIST = [
     '好き',
 ];
 
-const SHAPE_NAME_LIST = [
-    "circle",
-    "triangle",
-    "star",
-    "cross",
-    "rectangle",
-    "hexagon",
+const COLOR_NAME_LIST = [
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "skyblue",
+    "blue",
+    "purple",
+    "pink",
 ];
 
 const EMOTIONAL_ID = Math.floor(Math.random() * EMOTIONAL_LIST.length);
@@ -28,9 +30,9 @@ const initilize = function() {
         button.addEventListener('click', function (e) {
             gtag("event", "select_content", {
                 // 感情名をcontent_typeとする
-                content_type: `かたち_${EMOTIONAL_LABEL}_${SHAPE_NAME_LIST[i]}`,
+                content_type: `いろ_${EMOTIONAL_LABEL}`,
                 // ボタンのインデックス（何番目のボタンか）の数値を選択したIDとする
-                item_id: `${SHAPE_NAME_LIST[i]}`,
+                item_id: `${COLOR_NAME_LIST[i]}`,
             });
         });
     });
