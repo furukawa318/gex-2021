@@ -28,7 +28,7 @@ const initilize = function() {
         button.addEventListener('click', function (e) {
             gtag("event", "select_content", {
                 // 感情名をcontent_typeとする
-                content_type: `かたち_${EMOTIONAL_LABEL}_${SHAPE_NAME_LIST[i]}`,
+                content_type: `かたち_${EMOTIONAL_LABEL}`,
                 // ボタンのインデックス（何番目のボタンか）の数値を選択したIDとする
                 item_id: `${SHAPE_NAME_LIST[i]}`,
             });
