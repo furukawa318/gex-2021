@@ -1,3 +1,10 @@
+function setup() {
+  createCanvas(800, 500);
+  fill(255, 204, 0);
+  rect(20, 20, 100, 100);
+}
+
+
 const box_el = document.getElementById("box");
 console.log(document.getElementById("box"));
 
@@ -16,8 +23,8 @@ pane.addInput(PARAMS, 'opacity', {
   max: 1,
 }); //パラメーターをパネルにセットする
 
-// console.log(pane.addInput);
-
 pane.on('change', (val) => {
-  box_el.style.opacity = val;
+  console.log(PARAMS.opacity);
+  box_el.style.opacity = PARAMS.opacity;
 });
+
