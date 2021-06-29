@@ -1,6 +1,6 @@
 #box {
     width: 100px;
     height: 100px;
-    background-color: #000;
+    background: rgb(160, 56, 56);
     opacity: 0.5;
 }
