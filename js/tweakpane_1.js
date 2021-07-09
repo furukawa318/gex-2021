@@ -69,7 +69,7 @@ function draw() {
   drawForm1(60, 200, 60, line); // 横の位置、縦の位置、中心点と頂点までの距離、頂点数
 
   fill(color3.h, color3.s * 100, color3.v *100);
-  drawStar(60, 330, 60, 5); 
+  drawStar(60, 330, 60, 10); 
 
   fill(color4.h, color4.s * 100, color4.v *100);
   drawPolygon(60, 450, 60, polygon);
@@ -103,7 +103,7 @@ function drawStar(x, y, r, prickleNum) {
   for (let i = 0; i < vertexNum; i++) {
     R = i % 2 == 0 ? r : r / 2;
 
-    vertex(R * cos(360 * i / vertexNum), R * sin(360 * i / vertexNum));
+    vertex(R * cos(360 * i / vertexNum) , R * sin(360 * i / vertexNum));
   }
   endShape(CLOSE);
 
