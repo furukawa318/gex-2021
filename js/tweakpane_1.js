@@ -27,7 +27,8 @@ let color5 = {
 
 let radius = 0;
 let line = 3;
-let polygon =4;
+let corner = 5;
+let polygon =4; 
 
 function rgb2hsv(r, g, b) {
     // 引数処理
@@ -62,6 +63,7 @@ function setup() {
 function draw() {
   background(255);
   noStroke();
+  
   fill(color1.h, color1.s * 100, color1.v *100);
   rect(20, 20, 100, 100, radius);
 
@@ -69,7 +71,7 @@ function draw() {
   drawForm1(60, 200, 60, line); // 横の位置、縦の位置、中心点と頂点までの距離、頂点数
 
   fill(color3.h, color3.s * 100, color3.v *100);
-  drawStar(60, 330, 60, 10); 
+  drawStar(60, 330, 60, corner); 
 
   fill(color4.h, color4.s * 100, color4.v *100);
   drawPolygon(60, 450, 60, polygon);
@@ -101,7 +103,12 @@ function drawStar(x, y, r, prickleNum) {
 
   beginShape();
   for (let i = 0; i < vertexNum; i++) {
-    R = i % 2 == 0 ? r : r / 2;
+    // R = i % 2 == 0 ? r : r / 2;
+    if (i % 2 == 0) {
+			R = r;
+		} else {
+			R = r / (2 - corner * 0.1);
+		}
 
     vertex(R * cos(360 * i / vertexNum) , R * sin(360 * i / vertexNum));
   }
@@ -164,8 +171,11 @@ pane.addInput(PARAMS, 'form1', {
 });
 
 pane.addInput(PARAMS, 'form2', {
-  min: 0,
-  max: 1,
+  min: 5,
+  max: 10,
+  step: 1,
+}).on('change', (val) => {
+  corner = (PARAMS.form2);
 });
 
 pane.addInput(PARAMS, 'form3', {
